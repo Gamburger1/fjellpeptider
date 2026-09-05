@@ -10,12 +10,12 @@ import { primaryButtonClasses } from "@/lib/styles";
 const inputClasses =
   "rounded border border-black/[.08] px-3 py-2 text-sm dark:border-white/[.145] dark:bg-black";
 
-type PaymentMethod = "oxapay" | "manual";
+type PaymentMethod = "cryptomus" | "manual";
 
 export default function CheckoutView({ products }: { products: Product[] }) {
   const { items, clearCart } = useCart();
   const [submitted, setSubmitted] = useState(false);
-  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("oxapay");
+  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("cryptomus");
   const [isRedirecting, setIsRedirecting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -84,14 +84,12 @@ export default function CheckoutView({ products }: { products: Product[] }) {
       return;
     }
 
-    const email = formData.get("email") as string;
-
     setIsRedirecting(true);
     try {
-      const res = await fetch("/api/oxapay/create-invoice", {
+      const res = await fetch("/api/cryptomus/create-invoice", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ items: cartItems, email }),
+        body: JSON.stringify({ items: cartItems }),
       });
 
       const data = await res.json();
@@ -102,7 +100,7 @@ export default function CheckoutView({ products }: { products: Product[] }) {
       window.location.href = data.paymentUrl;
     } catch {
       setError(
-        "Kunne ikke starte betaling med OxaPay. Prøv igjen om litt.",
+        "Kunne ikke starte betaling med Cryptomus. Prøv igjen om litt.",
       );
       setIsRedirecting(false);
     }
@@ -228,11 +226,11 @@ export default function CheckoutView({ products }: { products: Product[] }) {
             <input
               type="radio"
               name="paymentMethod"
-              value="oxapay"
-              checked={paymentMethod === "oxapay"}
-              onChange={() => setPaymentMethod("oxapay")}
+              value="cryptomus"
+              checked={paymentMethod === "cryptomus"}
+              onChange={() => setPaymentMethod("cryptomus")}
             />
-            Kryptovaluta (Bitcoin, USDT) via OxaPay
+            Kryptovaluta (Bitcoin, USDT) via Cryptomus
           </label>
           <label className="flex items-center gap-2 text-sm text-zinc-700 dark:text-zinc-300">
             <input
@@ -254,10 +252,10 @@ export default function CheckoutView({ products }: { products: Product[] }) {
           className={`mt-4 ${primaryButtonClasses} disabled:opacity-60`}
         >
           {isRedirecting
-            ? paymentMethod === "oxapay"
+            ? paymentMethod === "cryptomus"
               ? "Sender deg til betaling…"
               : "Sender bestilling…"
-            : paymentMethod === "oxapay"
+            : paymentMethod === "cryptomus"
               ? "Betal med krypto"
               : "Fullfør bestilling"}
         </button>

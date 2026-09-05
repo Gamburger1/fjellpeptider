@@ -1,10 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
-import { createOxapayInvoice } from "@/lib/oxapay";
+import { createCryptomusInvoice } from "@/lib/cryptomus";
 
 interface RequestBody {
   items: { productId: string; size: string; quantity: number }[];
-  email?: string;
 }
 
 export async function POST(request: NextRequest) {
@@ -36,21 +35,20 @@ export async function POST(request: NextRequest) {
   const origin = request.nextUrl.origin;
 
   try {
-    const invoice = await createOxapayInvoice({
+    const invoice = await createCryptomusInvoice({
       amount,
       currency: "NOK",
       orderId,
-      email: body.email,
-      callbackUrl: `${origin}/api/oxapay/callback`,
-      returnUrl: `${origin}/checkout/success?order_id=${orderId}`,
+      urlCallback: `${origin}/api/cryptomus/callback`,
+      urlReturn: `${origin}/checkout/success?order_id=${orderId}`,
     });
 
     return NextResponse.json({
       paymentUrl: invoice.paymentUrl,
-      trackId: invoice.trackId,
+      uuid: invoice.uuid,
     });
   } catch (error) {
-    console.error("OxaPay invoice creation failed", error);
+    console.error("Cryptomus invoice creation failed", error);
     return NextResponse.json(
       { error: "Kunne ikke opprette betaling. Prøv igjen." },
       { status: 502 },

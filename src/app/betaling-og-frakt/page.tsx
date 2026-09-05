@@ -77,9 +77,9 @@ function ShieldIcon() {
 const paymentMethods = [
   {
     icon: <CoinIcon />,
-    title: "Kryptovaluta (OxaPay)",
+    title: "Kryptovaluta (Cryptomus)",
     description:
-      "Betal direkte med Bitcoin, USDT eller annen kryptovaluta via OxaPay. Automatisk bekreftet med en gang betalingen er mottatt.",
+      "Betal direkte med Bitcoin, USDT eller annen kryptovaluta via Cryptomus. Automatisk bekreftet med en gang betalingen er mottatt.",
   },
   {
     icon: <CardIcon />,
@@ -89,13 +89,13 @@ const paymentMethods = [
   },
 ];
 
-const oxapaySteps = [
+const cryptomusSteps = [
   {
     title: "Velg kryptovaluta i kassen",
     description: "Fullfør bestillingen og velg «Betal med krypto».",
   },
   {
-    title: "Du sendes til OxaPay",
+    title: "Du sendes til Cryptomus",
     description: "En sikker betalingsside åpnes med beløpet i NOK.",
   },
   {
@@ -202,10 +202,10 @@ export default function BetalingOgFraktPage() {
           <div>
             <div className="mb-4 flex items-center gap-2 text-black">
               <CoinIcon />
-              <h3 className="font-semibold">OxaPay (kryptovaluta)</h3>
+              <h3 className="font-semibold">Cryptomus (kryptovaluta)</h3>
             </div>
             <ol className="flex flex-col gap-4">
-              {oxapaySteps.map((step, i) => (
+              {cryptomusSteps.map((step, i) => (
                 <Reveal key={step.title} delayMs={i * 80}>
                   <li className="flex gap-3">
                     <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-violet-100 text-xs font-bold text-violet-600">
