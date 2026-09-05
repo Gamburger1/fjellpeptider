@@ -16,6 +16,7 @@ const eslintConfig = defineConfig([
     "server.js",
     "run-build.js",
     "run-prisma-generate.js",
+    "run-diagnostic.js",
   ]),
 ]);
 
