@@ -15,6 +15,7 @@ const eslintConfig = defineConfig([
     // CommonJS entry point required by cPanel/Passenger hosting.
     "server.js",
     "run-build.js",
+    "run-prisma-generate.js",
   ]),
 ]);
 
