@@ -34,7 +34,7 @@ export const products: Product[] = [
   {
     id: "17",
     name: "BPC-157 + TB-500 Blend",
-    shortDescription: "Kombinasjon av to peptider studert for vevsreparasjon.",
+    shortDescription: "To peptider satt sammen for raskere vevsreparasjon.",
     description:
       "En blanding av BPC-157 og TB-500, satt sammen for å dekke flere mekanismer i vevsreparasjon samtidig. Du får BPC-157 sin effekt på nitrogenoksid-signalering og angiogenese, kombinert med TB-500 sin rolle i cellemigrasjon via aktin-regulering. Blandingen brukes ofte i forskning på skader på sener, leddbånd og muskulatur der begge peptidene undersøkes sammen.",
     imageUrl: "/products/placeholder.svg",
@@ -46,7 +46,7 @@ export const products: Product[] = [
   {
     id: "3",
     name: "Retatrutide",
-    shortDescription: "Kraftig vekttap ved å dempe appetitten.",
+    shortDescription: "Kraftig vekttap, bedre insulinkontroll og økt fettforbrenning.",
     description:
       "Retatrutide regnes som et av de kraftigste peptidene for vekttap som er testet. Det demper appetitten kraftig og øker forbrenningen ved å virke på tre reseptorer samtidig (GLP-1, GIP og glukagon). Studier har vist betydelig vektnedgang og bedre blodsukkerkontroll. Det er fortsatt under forskning, men resultatene så langt er blant de sterkeste som er sett i denne peptidklassen.",
     imageUrl: "/products/reta.jpeg",
@@ -58,7 +58,7 @@ export const products: Product[] = [
   {
     id: "4",
     name: "NAD+",
-    shortDescription: "Koenzym for cellulær energi og aldringsforskning.",
+    shortDescription: "Koenzym for cellulær energi og saktere aldring.",
     description:
       "NAD+ (nikotinamid-adenin-dinukleotid) er et koenzym som finnes i alle levende celler og er essensielt for energiproduksjon i mitokondriene. Nivåene synker naturlig med alderen, noe som er koblet til redusert cellulær reparasjonsevne. I forskning er NAD+ studert for sin rolle i å aktivere sirtuiner, proteiner knyttet til DNA-reparasjon, betennelsesregulering og mitokondriell funksjon. Det undersøkes særlig innen aldringsforskning, kognitiv helse og metabolisme.",
     imageUrl: "/products/nad-v3.jpeg",
@@ -82,7 +82,7 @@ export const products: Product[] = [
   {
     id: "6",
     name: "Semax",
-    shortDescription: "Nootropisk peptid for fokus og hukommelse.",
+    shortDescription: "Skjerpet fokus og bedre hukommelse.",
     description:
       "Semax er et syntetisk peptid utviklet fra ACTH og opprinnelig brukt klinisk i Russland. I forskning er det studert for nootropiske og nevrobeskyttende egenskaper, blant annet gjennom å øke nivåene av BDNF (hjerneavledet nevrotrofisk faktor) i hippocampus. Peptidet påvirker også dopamin- og serotoninnivåer, noe som kan bidra til forbedret kognisjon og fokus. Semax er undersøkt i sammenheng med hukommelse, konsentrasjon og beskyttelse mot nevrologisk skade.",
     imageUrl: "/products/semax-v2.jpeg",
@@ -97,7 +97,7 @@ export const products: Product[] = [
   {
     id: "7",
     name: "Selank",
-    shortDescription: "Angstdempende peptid som støtter ro og fokus.",
+    shortDescription: "Demper angst og gir mer ro og fokus.",
     description:
       "Selank er et syntetisk peptid utviklet i Russland som analog til tuftsin, et immunmodulerende peptid som finnes naturlig i kroppen. I forskning er det studert for angstdempende og stemningsregulerende egenskaper, uten avhengighetsrisikoen som er assosiert med benzodiazepiner. Peptidet virker blant annet gjennom å modulere GABA-, dopamin- og serotoninsystemene. Selank er også undersøkt for kognitive effekter som forbedret konsentrasjon og læringsevne.",
     imageUrl: "/products/selank-v2.jpeg",
@@ -112,7 +112,7 @@ export const products: Product[] = [
   {
     id: "8",
     name: "KLOW",
-    shortDescription: "Blanding av fire peptider for helhetlig vevsreparasjon.",
+    shortDescription: "Fire peptider i én blanding for vevsreparasjon.",
     description:
       "KLOW er en blanding av fire peptider (GHK-Cu, BPC-157, TB-500 og KPV) satt sammen for å dekke flere reparasjonsmekanismer samtidig. Kombinasjonen er studert for effekter på kollagenproduksjon og hudfornyelse (GHK-Cu), reparasjon av mykvev (BPC-157 og TB-500), samt betennelsesdemping (KPV). Blandingen brukes ofte i forskning på helhetlig vevsreparasjon, som skader på sener, leddbånd og hud. Et typisk 80mg-hetteglass inneholder 50mg GHK-Cu, 10mg BPC-157, 10mg TB-500 og 10mg KPV.",
     imageUrl: "/products/klow-v2.png",
@@ -124,7 +124,7 @@ export const products: Product[] = [
   {
     id: "9",
     name: "KPV",
-    shortDescription: "Betennelsesdempende tripeptid for tarm og hud.",
+    shortDescription: "Demper betennelse i tarm og hud.",
     description:
       "KPV er et tripeptid avledet fra alfa-MSH (melanocyttstimulerende hormon) og er studert for sterke betennelsesdempende egenskaper. Peptidet virker ved å hemme NF-κB og MAP-kinase-signalveier, som er sentrale i kroppens betennelsesrespons. I forskning er KPV særlig undersøkt i sammenheng med tarmbetennelse og hudlidelser. Fordi det er et lite peptid har det god stabilitet og opptak sammenlignet med større molekyler.",
     imageUrl: "/products/KPV.jpeg",
@@ -136,7 +136,7 @@ export const products: Product[] = [
   {
     id: "10",
     name: "HCG",
-    shortDescription: "Hormon studert for testosteron og fertilitet.",
+    shortDescription: "Øker testosteronproduksjon og støtter fertilitet.",
     description:
       "HCG (humant choriongonadotropin) er et hormon som ligner luteiniserende hormon (LH) og stimulerer Leydig-cellene i testiklene til å produsere testosteron. I forskning er det studert for å opprettholde naturlig testosteronproduksjon og fertilitet hos menn, spesielt i kombinasjon med testosteronbehandling. HCG undersøkes også for sin rolle i å forhindre testikkelatrofi og opprettholde spermatogenese. Det er godt dokumentert innen fertilitets- og hormonforskning.",
     imageUrl: "/products/hcg-v2.jpeg",
@@ -172,7 +172,7 @@ export const products: Product[] = [
   {
     id: "12",
     name: "Ipamorelin",
-    shortDescription: "Selektiv GH-frisetter studert for muskelvekst og restitusjon.",
+    shortDescription: "Øker veksthormon for muskelvekst og restitusjon.",
     description:
       "Ipamorelin er et syntetisk pentapeptid som virker som en selektiv agonist på ghrelin-reseptoren (GHS-R). I forskning er det studert for evnen til å stimulere frigjøring av veksthormon fra hypofysen, uten å påvirke kortisol- eller prolaktinnivåer nevneverdig. Peptidet er undersøkt for potensielle effekter på muskelvekst, fettforbrenning og restitusjon, og regnes som en av de mest selektive GH-frisetterne som er studert.",
     imageUrl: "/products/ipa-v2.jpeg",
@@ -184,7 +184,7 @@ export const products: Product[] = [
   {
     id: "13",
     name: "CJC-1295 med DAC",
-    shortDescription: "Langtidsvirkende GHRH-analog med forlenget halveringstid.",
+    shortDescription: "Jevn økning i veksthormon over flere dager.",
     description:
       "CJC-1295 med DAC (Drug Affinity Complex) er en modifisert analog til veksthormonfrigjørende hormon (GHRH) som binder seg til albumin i blodet for å forlenge halveringstiden betraktelig. I forskning er det studert for evnen til å gi en jevn, forlenget økning i veksthormon- og IGF-1-nivåer over flere dager fra én enkelt dose. Peptidet undersøkes ofte i sammenheng med kroppssammensetning og cellulær regenerering.",
     imageUrl: "/products/cjc-w-dac-v2.jpeg",
@@ -196,7 +196,7 @@ export const products: Product[] = [
   {
     id: "14",
     name: "CJC-1295 uten DAC",
-    shortDescription: "Korttidsvirkende GHRH-analog, ofte kombinert med Ipamorelin.",
+    shortDescription: "Rask frigjøring av veksthormon, ofte kombinert med Ipamorelin.",
     description:
       "CJC-1295 uten DAC (også kjent som Mod GRF 1-29) er en kortere virkende analog til veksthormonfrigjørende hormon, uten albuminbindende egenskaper. I forskning er det studert for evnen til å gi en rask, pulsativ frigjøring av veksthormon som etterligner kroppens naturlige sekresjonsmønster. Peptidet undersøkes ofte i kombinasjon med GH-frisettere som Ipamorelin for å studere synergieffekter.",
     imageUrl: "/products/cjc-no-dac-v2.jpeg",
@@ -208,7 +208,7 @@ export const products: Product[] = [
   {
     id: "19",
     name: "Ipamorelin + CJC-1295 uten DAC Blend",
-    shortDescription: "Klassisk GH-stack for pulsativ veksthormonfrisetting.",
+    shortDescription: "Populær kombo for økt veksthormon og rask restitusjon.",
     description:
       "En blanding av Ipamorelin og CJC-1295 uten DAC, to peptider som ofte studeres sammen for deres synergieffekt på veksthormonfrisetting. Ipamorelin virker selektivt på ghrelin-reseptoren, mens CJC-1295 uten DAC gir en rask, pulsativ frigjøring via GHRH-reseptoren som etterligner kroppens naturlige sekresjonsmønster. Kombinasjonen er en av de mest studerte GH-stablene innen forskning på kroppssammensetning og restitusjon.",
     imageUrl: "/products/placeholder.svg",
@@ -220,7 +220,7 @@ export const products: Product[] = [
   {
     id: "15",
     name: "Tesamorelin",
-    shortDescription: "GHRH-analog studert for fettmetabolisme og kroppssammensetning.",
+    shortDescription: "Reduserer magefett og endrer kroppssammensetning.",
     description:
       "Tesamorelin er en syntetisk analog til veksthormonfrigjørende hormon (GHRH) som stimulerer hypofysen til å produsere og frigjøre veksthormon. I forskning er det særlig studert for effekten på visceralt fett og kroppssammensetning. Peptidet er også undersøkt for potensielle effekter på IGF-1-nivåer og kognitiv funksjon, og er et av de mer klinisk dokumenterte peptidene i GHRH-klassen.",
     imageUrl: "/products/tesa-v2.jpeg",
@@ -232,7 +232,7 @@ export const products: Product[] = [
   {
     id: "16",
     name: "MOTS-c",
-    shortDescription: "Mitokondrielt peptid studert for metabolisme og utholdenhet.",
+    shortDescription: "Bedre utholdenhet og raskere metabolisme.",
     description:
       "MOTS-c er et mitokondrielt avledet peptid som virker som en regulator av cellulær metabolisme. I forskning er det studert for evnen til å aktivere AMPK-signalveien, som spiller en sentral rolle i energiregulering og insulinsensitivitet. Peptidet er undersøkt for potensielle effekter på fettforbrenning, utholdenhet og beskyttelse mot metabolsk stress, og regnes som et av de mest lovende peptidene innen mitokondrieforskning.",
     imageUrl: "/products/motc-c-v2.jpeg",
