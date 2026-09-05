@@ -113,7 +113,7 @@ export default function CheckoutView({ products }: { products: Product[] }) {
           Bestilling mottatt
         </h1>
         <p className="mt-4 text-zinc-600 dark:text-zinc-400">
-          Takk — vi har mottatt bestillingen din. Vi sender
+          Takk, vi har mottatt bestillingen din. Vi sender
           betalingsdetaljer for Wise til e-posten din innen kort tid.
         </p>
         <Link

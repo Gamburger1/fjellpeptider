@@ -104,7 +104,7 @@ const cryptomusSteps = [
   },
   {
     title: "Automatisk bekreftelse",
-    description: "Betalingen bekreftes automatisk — ingen ventetid.",
+    description: "Betalingen bekreftes automatisk, ingen ventetid.",
   },
 ];
 

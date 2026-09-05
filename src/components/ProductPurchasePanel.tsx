@@ -38,8 +38,8 @@ export default function ProductPurchasePanel({ product }: { product: Product }) 
               aria-pressed={selectedSize === variant.size}
               className={`rounded-full border px-4 py-1.5 text-sm font-bold transition-colors ${
                 selectedSize === variant.size
-                  ? "border-amber-400 bg-amber-400 text-black"
-                  : "border-black/[.08] text-zinc-600 hover:border-amber-400 dark:border-white/[.145] dark:text-zinc-400"
+                  ? "border-black bg-black text-white dark:border-white dark:bg-white dark:text-black"
+                  : "border-black/[.08] text-zinc-600 hover:border-black/20 dark:border-white/[.145] dark:text-zinc-400 dark:hover:border-white/30"
               }`}
             >
               {variant.size}

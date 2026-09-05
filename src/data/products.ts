@@ -36,7 +36,7 @@ export const products: Product[] = [
     name: "BPC-157 + TB-500 Blend",
     shortDescription: "Kombinasjon av to peptider studert for vevsreparasjon.",
     description:
-      "En blanding av BPC-157 og TB-500, satt sammen for å dekke flere mekanismer i vevsreparasjon samtidig — BPC-157 sin effekt på nitrogenoksid-signalering og angiogenese, kombinert med TB-500 sin rolle i celle­migrasjon via aktin-regulering. Blandingen brukes ofte i forskning på skader på sener, leddbånd og muskulatur der begge peptidene undersøkes sammen.",
+      "En blanding av BPC-157 og TB-500, satt sammen for å dekke flere mekanismer i vevsreparasjon samtidig. Du får BPC-157 sin effekt på nitrogenoksid-signalering og angiogenese, kombinert med TB-500 sin rolle i cellemigrasjon via aktin-regulering. Blandingen brukes ofte i forskning på skader på sener, leddbånd og muskulatur der begge peptidene undersøkes sammen.",
     imageUrl: "/products/placeholder.svg",
     category: "Heling & Restitusjon",
     variants: [{ size: "10mg", price: 499.0 }],
@@ -46,9 +46,9 @@ export const products: Product[] = [
   {
     id: "3",
     name: "Retatrutide",
-    shortDescription: "Trippelagonist studert for vekttap og blodsukker.",
+    shortDescription: "Kraftig vekttap ved å dempe appetitten.",
     description:
-      "Retatrutide er et eksperimentelt peptid som virker på tre reseptorer samtidig: GLP-1, GIP og glukagon. I kliniske studier er det undersøkt for effekten på vekttap, blodsukkerregulering og fettmetabolisme. Den trippelagonistiske virkningsmekanismen skiller det fra tidligere GLP-1-legemidler og har i studier vist betydelig større vektreduksjon. Forskning på langtidseffekter og sikkerhet pågår fortsatt.",
+      "Retatrutide regnes som et av de kraftigste peptidene for vekttap som er testet. Det demper appetitten kraftig og øker forbrenningen ved å virke på tre reseptorer samtidig (GLP-1, GIP og glukagon). Studier har vist betydelig vektnedgang og bedre blodsukkerkontroll. Det er fortsatt under forskning, men resultatene så langt er blant de sterkeste som er sett i denne peptidklassen.",
     imageUrl: "/products/reta.jpeg",
     category: "Vektkontroll",
     variants: [{ size: "10mg", price: 999.0 }],
@@ -114,7 +114,7 @@ export const products: Product[] = [
     name: "KLOW",
     shortDescription: "Blanding av fire peptider for helhetlig vevsreparasjon.",
     description:
-      "KLOW er en blanding av fire peptider — GHK-Cu, BPC-157, TB-500 og KPV — satt sammen for å dekke flere reparasjonsmekanismer samtidig. Kombinasjonen er studert for effekter på kollagenproduksjon og hudfornyelse (GHK-Cu), reparasjon av mykvev (BPC-157 og TB-500), samt betennelsesdemping (KPV). Blandingen brukes ofte i forskning på helhetlig vevsreparasjon, som skader på sener, leddbånd og hud. Et typisk 80mg-hetteglass inneholder 50mg GHK-Cu, 10mg BPC-157, 10mg TB-500 og 10mg KPV.",
+      "KLOW er en blanding av fire peptider (GHK-Cu, BPC-157, TB-500 og KPV) satt sammen for å dekke flere reparasjonsmekanismer samtidig. Kombinasjonen er studert for effekter på kollagenproduksjon og hudfornyelse (GHK-Cu), reparasjon av mykvev (BPC-157 og TB-500), samt betennelsesdemping (KPV). Blandingen brukes ofte i forskning på helhetlig vevsreparasjon, som skader på sener, leddbånd og hud. Et typisk 80mg-hetteglass inneholder 50mg GHK-Cu, 10mg BPC-157, 10mg TB-500 og 10mg KPV.",
     imageUrl: "/products/klow-v2.png",
     category: "Heling & Restitusjon",
     variants: [{ size: "80mg", price: 1999.0 }],
@@ -148,9 +148,9 @@ export const products: Product[] = [
   {
     id: "11",
     name: "Melanotan II",
-    shortDescription: "Melanocortin-agonist studert for pigmentering og libido.",
+    shortDescription: "Gir rask brunfarge og økt libido.",
     description:
-      "Melanotan II er en syntetisk analog til alfa-MSH (melanocyttstimulerende hormon) som binder til melanocortin-reseptorer i kroppen. I forskning er det studert for evnen til å stimulere melaninproduksjon i huden, noe som gir økt pigmentering. Peptidet er også undersøkt for effekter på libido gjennom aktivering av MC4-reseptorer i sentralnervesystemet, samt for potensiell appetittregulerende effekt.",
+      "Melanotan II gjør at huden bruner raskt og jevnt, selv med lite sol. Mange bruker det også for økt libido, en kjent bieffekt av hvordan peptidet påvirker hjernens reseptorer. Det er en syntetisk versjon av kroppens eget bruningshormon (alfa-MSH), og effekten kommer vanligvis etter noen få doser. Kan gi kvalme de første gangene, spesielt ved høyere doser.",
     imageUrl: "/products/mela.jpeg",
     category: "Hud & Pigmentering",
     variants: [{ size: "10mg", price: 499.0 }],
@@ -160,9 +160,9 @@ export const products: Product[] = [
   {
     id: "18",
     name: "Melanotan I",
-    shortDescription: "Selektiv melanocortin-agonist studert for pigmentering.",
+    shortDescription: "Mildere og tryggere brunfarge enn Melanotan II.",
     description:
-      "Melanotan I (afamelanotid) er en syntetisk analog til alfa-MSH som, i motsetning til Melanotan II, primært binder selektivt til MC1-reseptoren. I forskning er det studert for evnen til å stimulere melaninproduksjon og øke pigmentering i huden, uten den samme brede aktiveringen av andre melanocortin-reseptorer. Dette gjør det til et mer målrettet forskningsobjekt for pigmenteringsstudier spesifikt, med mindre fokus på appetitt- og libidoeffekter enn Melanotan II.",
+      "Melanotan I gir en roligere, mer naturlig bruning enn Melanotan II, omtrent 30-50 % av effekten, men med færre bivirkninger. Det virker mer selektivt på kroppen, noe som betyr mindre kvalme og ingen nevneverdig effekt på libido. Det er også bedre dokumentert i forskning spesifikt på pigmentering, og regnes som det tryggere alternativet av de to.",
     imageUrl: "/products/placeholder.svg",
     category: "Hud & Pigmentering",
     variants: [{ size: "10mg", price: 499.0 }],

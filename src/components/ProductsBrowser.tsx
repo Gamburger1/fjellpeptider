@@ -14,14 +14,20 @@ export default function ProductsBrowser({ products }: { products: Product[] }) {
 
   const [selected, setSelected] = useState("Alle");
   const [search, setSearch] = useState("");
+  const [onlyInStock, setOnlyInStock] = useState(false);
 
-  const filtered = products.filter((product) => {
-    const matchesCategory = selected === "Alle" || product.category === selected;
-    const matchesSearch = product.name
-      .toLowerCase()
-      .includes(search.trim().toLowerCase());
-    return matchesCategory && matchesSearch;
-  });
+  const filtered = products
+    .filter((product) => {
+      const matchesCategory = selected === "Alle" || product.category === selected;
+      const matchesSearch = product.name
+        .toLowerCase()
+        .includes(search.trim().toLowerCase());
+      const matchesStock = !onlyInStock || !product.externalStock;
+      return matchesCategory && matchesSearch && matchesStock;
+    })
+    .sort(
+      (a, b) => Number(a.externalStock) - Number(b.externalStock),
+    );
 
   return (
     <div>
@@ -60,7 +66,7 @@ export default function ProductsBrowser({ products }: { products: Product[] }) {
           )}
         </div>
 
-        <div className="mb-4 flex flex-wrap gap-2">
+        <div className="mb-4 flex flex-wrap items-center gap-2">
           {categories.map((category) => (
             <button
               key={category}
@@ -75,6 +81,18 @@ export default function ProductsBrowser({ products }: { products: Product[] }) {
               {category}
             </button>
           ))}
+          <span className="mx-1 h-5 w-px bg-black/[.08] dark:bg-white/[.145]" />
+          <button
+            onClick={() => setOnlyInStock((current) => !current)}
+            aria-pressed={onlyInStock}
+            className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-colors ${
+              onlyInStock
+                ? "border-black bg-black text-white dark:border-white dark:bg-white dark:text-black"
+                : "border-black/[.08] text-zinc-600 hover:border-black/20 dark:border-white/[.145] dark:text-zinc-400 dark:hover:border-white/30"
+            }`}
+          >
+            Vis kun på lager
+          </button>
         </div>
 
         <p className="mb-6 text-xs tracking-wide text-zinc-500 uppercase">

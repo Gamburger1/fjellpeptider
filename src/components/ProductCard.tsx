@@ -39,7 +39,7 @@ export default function ProductCard({ product }: { product: Product }) {
           {sortedVariants.map((variant) => (
             <span
               key={variant.size}
-              className="rounded-full border border-amber-400 bg-amber-400 px-2.5 py-0.5 text-xs font-bold text-black"
+              className="rounded-full border border-black bg-black px-2.5 py-0.5 text-xs font-bold text-white dark:border-white dark:bg-white dark:text-black"
             >
               {variant.size}
             </span>

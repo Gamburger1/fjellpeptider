@@ -5,7 +5,7 @@ import ProductsBrowser from "@/components/ProductsBrowser";
 export const metadata: Metadata = {
   title: "Produkter",
   description:
-    "Se alle forskningspeptider fra NORLABS — 99 % renhet, testet og merket.",
+    "Se alle forskningspeptider fra NORLABS. 99 % renhet, testet og merket.",
 };
 
 export default async function ProductsPage() {

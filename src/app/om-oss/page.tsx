@@ -13,12 +13,12 @@ const reasons = [
   {
     title: "Høy kvalitetsstandard",
     description:
-      "Alle peptidene våre testes for renhet og merkes tydelig med innhold og styrke — 99 % renhet på hele sortimentet.",
+      "Alle peptidene våre testes for renhet og merkes tydelig med innhold og styrke. 99 % renhet på hele sortimentet.",
   },
   {
     title: "Nøye utvalgt sortiment",
     description:
-      "Vi dekker de mest etterspurte kategoriene innen forskningspeptider — fra heling og restitusjon til kognisjon, vektkontroll og hormonstøtte — fremfor å ha en uendelig lang katalog.",
+      "Vi dekker de mest etterspurte kategoriene innen forskningspeptider, fra heling og restitusjon til kognisjon, vektkontroll og hormonstøtte, fremfor å ha en uendelig lang katalog.",
   },
   {
     title: "Rask levering",
@@ -95,7 +95,7 @@ export default async function OmOssPage() {
             </p>
             <p>
               Navnet reflekterer hvor vi kommer fra og hvordan vi jobber:
-              nøkternt, ryddig og uten unødvendig støy. Vi tror på enkelhet —
+              nøkternt, ryddig og uten unødvendig støy. Vi tror på enkelhet:
               tydelig merking, ærlig informasjon, og et sortiment som er
               nøye vurdert fremfor uendelig langt.
             </p>

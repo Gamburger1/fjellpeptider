@@ -3,12 +3,16 @@ import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import ProductCard from "@/components/ProductCard";
 
+const FEATURED_PRODUCT_IDS = ["3", "11", "5"]; // Retatrutide, Melanotan II, GHK-Cu
+
 export default async function Home() {
-  const featured = await prisma.product.findMany({
-    take: 3,
-    orderBy: { sortOrder: "asc" },
+  const featuredProducts = await prisma.product.findMany({
+    where: { id: { in: FEATURED_PRODUCT_IDS } },
     include: { variants: true },
   });
+  const featured = FEATURED_PRODUCT_IDS.map((id) =>
+    featuredProducts.find((product) => product.id === id),
+  ).filter((product) => product !== undefined);
 
   return (
     <div>
@@ -23,10 +27,7 @@ export default async function Home() {
         <div className="absolute inset-0 bg-black/45" />
 
         <div className="relative flex h-full flex-col items-center justify-center px-6 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-zinc-300/20 bg-white/5 px-4 py-1.5 text-xs font-bold tracking-widest text-zinc-300 uppercase backdrop-blur">
-            99 % renhet · Kun til forskningsbruk
-          </div>
-          <h1 className="font-montserrat mt-4 text-4xl tracking-wide text-zinc-300 uppercase">
+          <h1 className="font-montserrat text-4xl tracking-wide text-zinc-300 uppercase">
             <span className="font-normal">NOR</span>
             <span className="font-bold">LABS</span>
           </h1>
