@@ -1,0 +1,15 @@
+---
+# Deployment script for cPanel's "Git Version Control" feature.
+# Clicking "Deploy HEAD Commit" in cPanel runs this as the cPanel user
+# (no SSH/root needed) — it activates the Node.js virtual environment
+# that "Setup Node.js App" created, then installs deps and builds.
+#
+# Replace NODEVENV_PATH below with the exact path cPanel shows you under
+# Setup Node.js App -> your app -> "Enter to the virtual environment"
+# command, e.g.:
+#   source /home/USERNAME/nodevenv/norlabs/20/bin/activate
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/USERNAME/norlabs/
+    - /bin/cp -R * $DEPLOYPATH
+    - source /home/USERNAME/nodevenv/norlabs/20/bin/activate && cd $DEPLOYPATH && npm install && npm run build

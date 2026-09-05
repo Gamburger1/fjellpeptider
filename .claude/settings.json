@@ -28,7 +28,20 @@
       "Bash(cat*)",
       "Bash(grep*)",
       "Bash(find*)",
-      "Bash(pwd)"
+      "Bash(pwd)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/magomed/IdeaProjects/fjellpeptider/public/banner2.jpeg)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/magomed/IdeaProjects/fjellpeptider/public/banner3.jpeg)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/products/1)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/products)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"http://localhost:3000/products/4\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"http://localhost:3000/products/nad-v3.jpeg\")",
+      "Bash(curl -sI \"http://localhost:3000/products/nad-v3.jpeg\")",
+      "Bash(npm view *)",
+      "Bash(npm ls *)",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s \"http://localhost:3000/products/1\")",
+      "Bash(curl -s http://localhost:3000/robots.txt)",
+      "Bash(curl -s http://localhost:3000/sitemap.xml)"
     ],
     "deny": [
       "Bash(rm -rf*)",

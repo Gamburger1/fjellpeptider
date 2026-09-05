@@ -1,8 +1,19 @@
 @import "tailwindcss";
 
+/* This brand always uses the light gray studio-gradient look (matching the
+   product photography) — dark mode is intentionally disabled rather than
+   left to follow system preference, so `dark:` utilities never activate. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
+  --background: #e8e8e8;
   --foreground: #171717;
+  --background-gradient: radial-gradient(
+    circle at 50% 30%,
+    #efefef 0%,
+    #d6d6d6 55%,
+    #b8b8b8 100%
+  );
 }
 
 @theme inline {
@@ -10,17 +21,51 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-montserrat: var(--font-montserrat);
 }
 
 body {
-  background: var(--background);
+  background: var(--background-gradient);
+  background-attachment: fixed;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Scroll-triggered reveal, used by the <Reveal> component. */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fade-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-hero {
+  animation: fade-slide-up 0.7s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-hero {
+    animation: none;
+  }
 }
