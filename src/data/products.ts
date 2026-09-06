@@ -15,6 +15,7 @@ export const products: Product[] = [
     ],
     inStock: true,
     externalStock: true,
+    comingSoon: false,
   },
   {
     id: "2",
@@ -30,6 +31,7 @@ export const products: Product[] = [
     ],
     inStock: true,
     externalStock: true,
+    comingSoon: false,
   },
   {
     id: "17",
@@ -42,6 +44,7 @@ export const products: Product[] = [
     variants: [{ size: "10mg", price: 499.0 }],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
   },
   {
     id: "3",
@@ -49,11 +52,12 @@ export const products: Product[] = [
     shortDescription: "Kraftig vekttap, bedre insulinkontroll og økt fettforbrenning.",
     description:
       "Retatrutide regnes som et av de kraftigste peptidene for vekttap som er testet. Det demper appetitten kraftig og øker forbrenningen ved å virke på tre reseptorer samtidig (GLP-1, GIP og glukagon). Studier har vist betydelig vektnedgang og bedre blodsukkerkontroll. Det er fortsatt under forskning, men resultatene så langt er blant de sterkeste som er sett i denne peptidklassen.",
-    imageUrl: "/products/reta.jpeg",
+    imageUrl: "/products/reta-v4.png",
     category: "Vektkontroll",
     variants: [{ size: "10mg", price: 999.0 }],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
   },
   {
     id: "4",
@@ -61,11 +65,12 @@ export const products: Product[] = [
     shortDescription: "Koenzym for cellulær energi og saktere aldring.",
     description:
       "NAD+ gir cellene mer energi og støtter kroppens naturlige reparasjonsprosesser. Nivåene synker naturlig med alderen, noe som henger sammen med redusert cellulær reparasjonsevne og lavere energinivå. Det aktiverer sirtuiner, proteiner med en nøkkelrolle i DNA-reparasjon og mitokondriell funksjon. Mye brukt innen aldringsforskning og for å støtte kognisjon og metabolisme.",
-    imageUrl: "/products/nad-v3.jpeg",
+    imageUrl: "/products/nad-v4.png",
     category: "Anti-aldring & Levetid",
     variants: [{ size: "500mg", price: 899.0 }],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
   },
   {
     id: "5",
@@ -73,11 +78,12 @@ export const products: Product[] = [
     shortDescription: "Kobberpeptid for hud, kollagen og sårheling.",
     description:
       "GHK-Cu stimulerer kollagen- og elastinproduksjon i huden, noe som gir synlig hudforyngelse og raskere sårheling. Det er et kobberbindende peptid kroppen produserer naturlig, men nivåene faller med alderen. I tillegg har det antioksidante og betennelsesdempende egenskaper, og brukes også i forskning på hårvekst.",
-    imageUrl: "/products/GHK-CU.jpeg",
+    imageUrl: "/products/ghk-cu-v4.png",
     category: "Anti-aldring & Levetid",
     variants: [{ size: "50mg", price: 349.0 }],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
   },
   {
     id: "6",
@@ -85,7 +91,7 @@ export const products: Product[] = [
     shortDescription: "Skjerpet fokus og bedre hukommelse.",
     description:
       "Semax skjerper fokus og forbedrer hukommelsen ved å øke nivåene av BDNF, et protein som støtter vekst og overlevelse av hjerneceller. Det påvirker også dopamin- og serotoninnivåer, noe som gir bedre konsentrasjon og humør. Opprinnelig utviklet i Russland og brukt klinisk der i flere tiår, med god dokumentasjon på nevrobeskyttende effekter.",
-    imageUrl: "/products/semax-v2.jpeg",
+    imageUrl: "/products/semax-v4.png",
     category: "Kognisjon & Fokus",
     variants: [
       { size: "5mg", price: 449.0 },
@@ -93,6 +99,7 @@ export const products: Product[] = [
     ],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
   },
   {
     id: "7",
@@ -100,7 +107,7 @@ export const products: Product[] = [
     shortDescription: "Demper angst og gir mer ro og fokus.",
     description:
       "Selank demper angst og gir en rolig, stabil sinnsstemning, uten avhengighetsrisikoen som følger med benzodiazepiner. Det virker ved å påvirke GABA-, dopamin- og serotoninsystemene i hjernen. I tillegg til den angstdempende effekten er det koblet til bedre konsentrasjon og læringsevne. Utviklet i Russland som en analog til tuftsin, et immunmodulerende peptid kroppen produserer naturlig.",
-    imageUrl: "/products/selank-v2.jpeg",
+    imageUrl: "/products/selank-v4.png",
     category: "Kognisjon & Fokus",
     variants: [
       { size: "5mg", price: 449.0 },
@@ -108,6 +115,7 @@ export const products: Product[] = [
     ],
     inStock: true,
     externalStock: true,
+    comingSoon: false,
   },
   {
     id: "8",
@@ -120,6 +128,7 @@ export const products: Product[] = [
     variants: [{ size: "80mg", price: 1999.0 }],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
   },
   {
     id: "9",
@@ -127,11 +136,12 @@ export const products: Product[] = [
     shortDescription: "Demper betennelse i tarm og hud.",
     description:
       "KPV demper betennelse effektivt ved å blokkere signalveiene som trigger kroppens betennelsesrespons. Det er særlig brukt i forskning på tarmbetennelse og hudlidelser. Fordi det er et lite peptid har det god stabilitet og tas lettere opp av kroppen enn større molekyler. Avledet fra alfa-MSH, et hormon kroppen selv produserer.",
-    imageUrl: "/products/KPV.jpeg",
+    imageUrl: "/products/kpv-v4.png",
     category: "Heling & Restitusjon",
     variants: [{ size: "5mg", price: 499.0 }],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
   },
   {
     id: "10",
@@ -139,11 +149,12 @@ export const products: Product[] = [
     shortDescription: "Øker testosteronproduksjon og støtter fertilitet.",
     description:
       "HCG holder testosteronproduksjonen i gang og bevarer fertiliteten, spesielt viktig for menn som kombinerer det med testosteronbehandling. Det virker ved å stimulere Leydig-cellene i testiklene direkte, og motvirker testikkelatrofi som ellers kan følge med hormonbehandling. Godt dokumentert innen fertilitets- og hormonforskning.",
-    imageUrl: "/products/hcg-v2.jpeg",
+    imageUrl: "/products/hcg-v4.png",
     category: "Hormonstøtte",
     variants: [{ size: "5000iu", price: 899.0 }],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
   },
   {
     id: "11",
@@ -151,11 +162,12 @@ export const products: Product[] = [
     shortDescription: "Gir rask brunfarge og økt libido.",
     description:
       "Melanotan II gjør at huden bruner raskt og jevnt, selv med lite sol. Mange bruker det også for økt libido, en kjent bieffekt av hvordan peptidet påvirker hjernens reseptorer. Det er en syntetisk versjon av kroppens eget bruningshormon (alfa-MSH), og effekten kommer vanligvis etter noen få doser. Kan gi kvalme de første gangene, spesielt ved høyere doser.",
-    imageUrl: "/products/mela.jpeg",
+    imageUrl: "/products/mela-v4.png",
     category: "Hud & Pigmentering",
     variants: [{ size: "10mg", price: 499.0 }],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
   },
   {
     id: "18",
@@ -168,6 +180,7 @@ export const products: Product[] = [
     variants: [{ size: "10mg", price: 499.0 }],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
   },
   {
     id: "12",
@@ -175,11 +188,12 @@ export const products: Product[] = [
     shortDescription: "Øker veksthormon for muskelvekst og restitusjon.",
     description:
       "Ipamorelin øker frigjøringen av veksthormon fra hypofysen, noe som støtter muskelvekst, fettforbrenning og restitusjon. Det virker selektivt, uten å påvirke kortisol- eller prolaktinnivåer nevneverdig, som er en vanlig bivirkning med andre GH-frisettere. Regnes som et av de mildeste og mest presise alternativene i denne kategorien.",
-    imageUrl: "/products/ipa-v2.jpeg",
+    imageUrl: "/products/ipa-v4.png",
     category: "Vekst & Muskler",
     variants: [{ size: "5mg", price: 499.0 }],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
   },
   {
     id: "13",
@@ -192,6 +206,7 @@ export const products: Product[] = [
     variants: [{ size: "5mg", price: 999.0 }],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
   },
   {
     id: "14",
@@ -204,6 +219,7 @@ export const products: Product[] = [
     variants: [{ size: "5mg", price: 999.0 }],
     inStock: true,
     externalStock: true,
+    comingSoon: false,
   },
   {
     id: "19",
@@ -216,6 +232,7 @@ export const products: Product[] = [
     variants: [{ size: "10mg", price: 999.0 }],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
   },
   {
     id: "15",
@@ -228,6 +245,20 @@ export const products: Product[] = [
     variants: [{ size: "10mg", price: 1499.0 }],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
+  },
+  {
+    id: "21",
+    name: "HGH",
+    shortDescription: "Veksthormon rett fra kilden, uten omveier via frisettere.",
+    description:
+      "HGH gir kroppen veksthormon direkte, i stedet for å stimulere hypofysen til å produsere mer selv slik GH-frisettere som Ipamorelin og CJC-1295 gjør. Detaljer om styrke og pris kommer snart.",
+    imageUrl: "/products/placeholder.svg",
+    category: "Vekst & Muskler",
+    variants: [],
+    inStock: false,
+    externalStock: false,
+    comingSoon: true,
   },
   {
     id: "16",
@@ -240,6 +271,7 @@ export const products: Product[] = [
     variants: [{ size: "10mg", price: 699.0 }],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
   },
   {
     id: "20",
@@ -255,6 +287,7 @@ export const products: Product[] = [
     ],
     inStock: true,
     externalStock: false,
+    comingSoon: false,
   },
   // TODO: Add more products here
 ];
