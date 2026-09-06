@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
-import ProductPurchasePanel from "@/components/ProductPurchasePanel";
-import StockBadge from "@/components/StockBadge";
+import ProductDetail from "@/components/ProductDetail";
 import ProductCard from "@/components/ProductCard";
 
 export async function generateMetadata({
@@ -62,33 +60,12 @@ export default async function ProductPage({
       >
         ← Tilbake til produkter
       </Link>
-      <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
-        <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-zinc-100 dark:bg-zinc-900">
-          <Image
-            src={product.imageUrl}
-            alt={product.name}
-            fill
-            className="object-cover"
-          />
-        </div>
-        <div>
-          <h1 className="text-3xl font-extrabold tracking-wide text-black uppercase dark:text-zinc-50">
-            {product.name}
-          </h1>
-          <div className="mt-3">
-            <StockBadge inStock={product.inStock} externalStock={product.externalStock} />
-          </div>
-          <p className="mt-6 text-base leading-7 text-zinc-600 dark:text-zinc-400">
-            {product.description}
-          </p>
-          <ProductPurchasePanel product={product} />
-        </div>
-      </div>
+      <ProductDetail product={product} />
 
       {related.length > 0 && (
         <div className="mt-20">
           <h2 className="mb-10 flex items-center gap-3 text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">
-            <span className="h-6 w-1 rounded-full bg-gradient-to-b from-violet-500 to-orange-500" />
+            <span className="h-6 w-1 rounded-full bg-gradient-to-b from-[#2f6690] to-orange-500" />
             Relaterte produkter
           </h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">

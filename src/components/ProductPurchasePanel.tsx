@@ -1,14 +1,20 @@
 "use client";
 
-import { useState } from "react";
 import type { Product } from "@/types/product";
 import { useCart } from "@/context/cart-context";
 import { formatPrice } from "@/lib/format";
 import { primaryButtonClasses } from "@/lib/styles";
 
-export default function ProductPurchasePanel({ product }: { product: Product }) {
+export default function ProductPurchasePanel({
+  product,
+  selectedSize,
+  onSelectSize,
+}: {
+  product: Product;
+  selectedSize: string;
+  onSelectSize: (size: string) => void;
+}) {
   const { addToCart } = useCart();
-  const [selectedSize, setSelectedSize] = useState(product.variants[0].size);
 
   const selectedVariant =
     product.variants.find((v) => v.size === selectedSize) ??
@@ -17,7 +23,7 @@ export default function ProductPurchasePanel({ product }: { product: Product }) 
   return (
     <div className="mt-4">
       <div className="flex items-baseline gap-3">
-        <span className="text-3xl font-extrabold text-violet-600">
+        <span className="text-3xl font-extrabold text-[#2f6690]">
           {formatPrice(selectedVariant.price)}
         </span>
         <span className="text-sm font-semibold text-zinc-500">
@@ -34,7 +40,7 @@ export default function ProductPurchasePanel({ product }: { product: Product }) 
             <button
               key={variant.size}
               type="button"
-              onClick={() => setSelectedSize(variant.size)}
+              onClick={() => onSelectSize(variant.size)}
               aria-pressed={selectedSize === variant.size}
               className={`rounded-full border px-4 py-1.5 text-sm font-bold transition-colors ${
                 selectedSize === variant.size

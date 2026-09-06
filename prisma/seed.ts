@@ -15,6 +15,7 @@ async function main() {
         category: product.category,
         inStock: product.inStock,
         externalStock: product.externalStock,
+        comingSoon: product.comingSoon,
         sortOrder,
         variants: {
           deleteMany: {},
@@ -30,6 +31,7 @@ async function main() {
         category: product.category,
         inStock: product.inStock,
         externalStock: product.externalStock,
+        comingSoon: product.comingSoon,
         sortOrder,
         variants: {
           create: product.variants,
