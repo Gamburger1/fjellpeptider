@@ -25,7 +25,7 @@ export default function ProductDetail({ product }: { product: Product }) {
           src={imageUrl}
           alt={`${product.name}${selectedVariant ? ` (${selectedVariant.size})` : ""}`}
           fill
-          className="object-cover"
+          className="animate-image-fade object-cover"
         />
       </div>
       <div>

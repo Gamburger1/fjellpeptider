@@ -34,9 +34,9 @@ export default function ProductPurchasePanel({
         99 % renhet · Kun til forskningsbruk
       </p>
 
-      {product.variants.length > 1 && (
-        <div className="mt-4 flex gap-2">
-          {product.variants.map((variant) => (
+      <div className="mt-4 flex gap-2">
+        {product.variants.length > 1 ? (
+          product.variants.map((variant) => (
             <button
               key={variant.size}
               type="button"
@@ -50,9 +50,13 @@ export default function ProductPurchasePanel({
             >
               {variant.size}
             </button>
-          ))}
-        </div>
-      )}
+          ))
+        ) : (
+          <span className="rounded-full border border-black bg-black px-4 py-1.5 text-sm font-bold text-white dark:border-white dark:bg-white dark:text-black">
+            {selectedVariant.size}
+          </span>
+        )}
+      </div>
 
       <button
         onClick={() => addToCart(product.id, selectedSize)}
